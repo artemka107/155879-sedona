@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <h1 class="hidden">Седона</h1>
+
+      <nav class="main-nav">
+        <img class="main-nav__logo" src="http://placehold.it/150x100" alt="Sedona" width="" height="">
+        <button class="main-nav__open">Открыть меню</button>
+        <div class="main-nav__menu">
+          <button class="man-nav__close">Закрыть меню</button>
+          <ul class="man-nav__list">
+            <li class="man-nav__item"><a href="#" class="navigation__link">Главнаяя</a></li>
+            <li class="man-nav__item"><a href="#" class="navigation__link">Фото и видео</a></li>
+            <li class="man-nav__item"><a href="#" class="navigation__link">Форма отзыва</a></li>
+            <li class="man-nav__item"><a href="#" class="navigation__link">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="intro">
+        <div class="intro__img">
+          <img src="http://placehold.it/150x100" alt="Добро пожаловать в Седону" width="" height="">
+        </div>
+        <p class="intro__slogan">Оставьте свой отзыв</p>
+        <p class="intro__text">Помогите нашим отелям стать лучше! Оставьте свой отзыв о них, а также о посещённых вами достопримечательностях</p>
+      </div>
+    </header>
+
+
+    <main>
+      <section class="form">
+        <form action="#" method="post">
+          <fieldset class="form__group form__group--fullname">
+            <legend class="form__title">Представьтесь, пожалуйста:</legend>
+            <div class="form__presentation-wrapper">
+              <label for="name">Имя</label>
+              <input type="text" name="name" id="name" placeholder="Петр">
+            </div>
+            <div class="form__presentation-wrapper">
+              <label for="second-name">Имя</label>
+              <input type="text" name="second-name" id="second-name" placeholder="Петр">
+            </div>
+            <div class="form__presentation-wrapper">
+              <label for="patronymic">Имя</label>
+              <input type="text" name="patronymic" id="patronymic" placeholder="Петр">
+            </div>
+          </fieldset>
+
+          <fieldset class="form__group">
+            <legend class="form__title">Контактная информация:</legend>
+            <div class="form__contacts-wrapper">
+              <label class="form__tel-field" for="tel">Контактный телефон:</label>
+              <input class="form__tel-label" type="tel" name="tel" id="tel" placeholder="Введите телефон">
+            </div>
+            <div class="form__contacts-wrapper">
+              <label class="form__email-field" for="email">Электронная почта:</label>
+              <input class="form__email-label" type="email" name="email" id="email">
+            </div>
+          </fieldset>
+
+          <fieldset class="form__group">
+            <legend class="form__title">Ваше общее впечатление:</legend>
+            <div class="form__effect-wrapper">
+              <input class="form__effect-field" type="radio" name="effect" value="positive" id="positive">
+              <label class="form__effect-label" for="">Скорее положительное</label>
+            </div>
+            <div class="form__effect-wrapper">
+              <input class="form__effect-field" type="radio" name="effect" value="negative" id="negative">
+              <label class="form__effect-label" for="">Скорее отритцательное</label>
+            </div>
+            <div class="form__effect-wrapper">
+              <input class="form__effect-field" type="radio" name="effect" value="difficult" id="difficult">
+              <label class="form__effect-label" for="">Затрудняюсь ответить</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__group">
+            <legend class="form__title">Посещённые достопримечательности:</legend>
+            <div class="form__sight-wrapper">
+              <input class="form__sight-field" type="checkbox" name="devil's bridge" id="devil's bridge">
+              <label class="form__sight-label" for="devil's bridge">Мост Дьявола</label>
+            </div>
+            <div class="form__sight-wrapper">
+              <input class="form__sight-field" type="checkbox" name="Slide Park" id="Slide Park">
+              <label class="form__sight-label" for="Slide Park">Слайд-парк</label>
+            </div>
+            <div class="form__sight-wrapper">
+              <input class="form__sight-field" type="checkbox" name="Mount bell" id="Mount bell">
+              <label class="form__sight-label" for="Mount bell">Гора-Колокол</label>
+            </div>
+            <div class="form__sight-wrapper">
+              <input class="form__sight-field" type="checkbox" name="Red rocks" id="Red rocks">
+              <label class="form__sight-label" for="Red rocks">Красные скалы</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__group">
+            <legend class="form__title">Опишите свои эмоции:</legend>
+            <textarea class="form__emotions-field" name="emotions" id="emotions" cols="30" rows="10">Опишите подробно все свои восторги</textarea>
+          </fieldset>
+
+          <button class="form__btn" type="submit" name="submit-form">Отправить отзыв</button>
+        </form>
+      </section>
+    </main>
+
+
+    <footer class="page-footer">
+      <p class="instagram" href="#">#VISITSEDONA</p>
+      <div class="social">
+        <a class="social__link  socil__link--tw" href="#"></a>
+        <a class="social__link  socil__link--fb" href="#"></a>
+        <a class="social__link  socil__link--yt" href="#"></a>
+      </div>
+      <p class="page-footer__copyright"></p>
+    </footer>
+  </body>
+</html>
