@@ -1,0 +1,40 @@
+.reason {
+  outline: 3px solid black;
+}
+
+.reason__about {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @include side-padding(30px);
+  background: #81b3d2;
+  color: #fff;
+
+  &--bg-gray {
+    background: #eee;
+    color: #000;
+    @include side-padding(35px);
+  }
+}
+
+.reason__title {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.reason__number {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.reason__text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.reason__foto {
+  width: 320px;
+  height: 260px;
+}

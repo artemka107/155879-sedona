@@ -1,0 +1,38 @@
+.post {
+  @include side-padding(20px);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid  #e5e5e5;
+}
+
+.post__foto {
+  margin: 0;
+}
+
+.post__caption {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.post__annotation {
+  margin: 0;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.post__foto-author {
+  font-style: normal;
+}
+
+.post__like {
+  font-size: 0;
+}
+
+.post__count {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+}

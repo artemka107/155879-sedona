@@ -1,0 +1,26 @@
+.intro {
+  outline: 3px solid red;
+}
+
+.intro__img {
+  width: 320px;
+  height: 390px;
+  background: #d3e4ef url("../img/bg-back-mobile@1x.jpg");
+}
+
+
+.intro__title {
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  @include side-padding(20px);
+}
+
+.intro__text {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  @include side-padding(20px);
+}

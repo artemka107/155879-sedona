@@ -1,0 +1,158 @@
+.form__group {
+  position: relative;
+  @include side-padding(20px);
+  padding-top: 30px;
+  border: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #e5e5e5;
+  }
+}
+
+.form__title {
+  padding-top: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.form__presentation-wrapper {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__presentation-label {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.form__presentation-field {
+  display: inline-block;
+  padding: 17px 20px;
+  background: $bg-input;
+  box-sizing: border-box;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+
+  &::-webkit-input-placeholder {
+    opacity: 1;
+  }
+  &::-moz-placeholder {
+    opacity: 1;
+  }
+  &:-moz-placeholder {
+    opacity: 1;
+  }
+  &:-ms-input-placeholder {
+    opacity: 1;
+  }
+}
+
+.form__contacts-wrapper {
+  margin-bottom: 45px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__contacts-label {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.form__contacts-field {
+  display: inline-block;
+  padding: 17px 20px;
+  background: $bg-input;
+  box-sizing: border-box;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+
+  &::-webkit-input-placeholder {
+    opacity: 1;
+  }
+  &::-moz-placeholder {
+    opacity: 1;
+  }
+  &:-moz-placeholder {
+    opacity: 1;
+  }
+  &:-ms-input-placeholder {
+    opacity: 1;
+  }
+}
+
+.form__effect-wrapper {
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__effect-label {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.form__sight-wrapper {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__sight-label {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.form__emotions-field {
+  box-sizing: border-box;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: none;
+  background: $bg-input;
+  resize: none;
+  outline: 1px solid transparent;
+}
+
+.form__btn {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px 0;
+  outline: 1px solid transparent;
+  border: 0;
+  background: $bg-blue;
+  font-size: 21px;
+  line-height: 26px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+
+}

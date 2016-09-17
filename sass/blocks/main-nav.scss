@@ -1,0 +1,22 @@
+.main-nav {
+  position: relative;
+  width: 320px;
+  background: #fff;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__link {
+  display: block;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  text-decoration: none;
+  background: #81b3d2;
+  text-align: center;
+  color: #fff;
+}

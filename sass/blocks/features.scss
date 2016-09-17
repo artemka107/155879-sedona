@@ -1,0 +1,26 @@
+.features {
+  outline: 3px solid black;
+  @include side-padding(20px);
+  padding-top: 40px;
+  padding-bottom: 5px;
+}
+
+.features__item {
+  padding-left: 50px;
+  text-align: left;
+}
+
+.features__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.features__text {
+  margin-bottom: 35px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}

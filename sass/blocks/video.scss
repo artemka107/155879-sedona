@@ -1,0 +1,19 @@
+.video {
+  position: relative;
+}
+
+.video__about {
+  @include side-padding(25px);
+  text-align: center;
+}
+
+.video__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.video__text {
+  font-size: 14px;
+  line-height: 24px;
+}
