@@ -1,0 +1,24 @@
+.posts {
+  @include side-padding(20px);
+}
+
+@media (min-width: 768px) {
+  .posts {
+    @include side-padding(60px);
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .posts {
+    @include side-padding(0);
+  }
+}

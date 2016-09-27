@@ -10,3 +10,9 @@
   line-height: 48px;
   font-size: 0;
 }
+
+@media (min-width: 768px) {
+  .social {
+    width: 40%;
+  }
+}

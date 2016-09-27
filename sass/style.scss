@@ -1,11 +1,11 @@
+@import "variables.scss";
+
+@import "mixins.scss";
+
 @import "global/normalize.scss";
 @import "global/fonts.scss";
 @import "global/body.scss";
 @import "global/global-wrapper.scss";
-
-@import "variables.scss";
-
-@import "mixins.scss";
 
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
@@ -19,4 +19,5 @@
 @import "blocks/posts.scss";
 @import "blocks/post.scss";
 @import "blocks/video.scss";
+@import "blocks/player.scss";
 @import "blocks/form.scss";

@@ -1,3 +1,15 @@
 .global-wrapper {
-  width: 320px;
+  width: auto;
+  background: #ffffff;
+
+  @media (min-width: 768px) {
+    width: auto;
+    max-width: 1200;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+  }
 }
