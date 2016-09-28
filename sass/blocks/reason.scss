@@ -39,14 +39,6 @@
   font-weight: 400;
 }
 
-.reason__foto {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-}
-
 .reason__img {
   width: 100%;
   height: 260px;
@@ -54,28 +46,24 @@
 
 @media (min-width: 768px) {
 
-  .reasons {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
   .reason {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    flex-direction: row;
-    width: 100%;
 
     &--inner-width {
       width: 33.33%;
     }
+  }
+
+  .reason__wrapper {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
   }
 
   .reason__about {
