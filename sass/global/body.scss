@@ -1,0 +1,19 @@
+body {
+  min-width: 320px;
+  font-family: $ff-PT-Sans;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: #f2f2f2;
+}
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

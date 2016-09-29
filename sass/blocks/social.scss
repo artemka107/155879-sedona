@@ -1,0 +1,18 @@
+.social {
+  display: inline-block;
+}
+
+.social__link {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  background: $bg-blue;
+  line-height: 48px;
+  font-size: 0;
+}
+
+@media (min-width: 768px) {
+  .social {
+    width: 40%;
+  }
+}

@@ -1,0 +1,14 @@
+@mixin side-padding($size) {
+  padding-left: $size;
+  padding-right: $size;
+}
+// миксин для боковых отступов
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+// миксин для распорки

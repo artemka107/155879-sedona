@@ -2,107 +2,129 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div class="global-wrapper">
+      <header class="page-header">
 
-    <header class="page-header">
-
-      <nav class="main-nav">
-        <img class="main-nav__logo" src="http://placehold.it/150x100" alt="Sedona" width="" height="">
-        <button class="main-nav__open">Открыть меню</button>
-        <div class="main-nav__menu">
-          <ul class="man-nav__list">
-            <li class="man-nav__item"><a href="#" class="main-nav__link">Главнаяя</a></li>
-            <li class="man-nav__item"><a href="#" class="main-nav__link">Фото и видео</a></li>
-            <li class="man-nav__item"><a href="#" class="main-nav__link">Форма отзыва</a></li>
-            <li class="man-nav__item"><a href="#" class="main-nav__link">HTML Academy</a></li>
+        <nav class="main-nav  main-nav--opened">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--active  main-nav__link--first-shadow">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фото и видео</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
+            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--last-shadow" href="#">HTML Academy</a></li>
           </ul>
+          <img class="main-nav__logo" src="img/logo-sedona-mobile.svg" alt="Sedona" width="102" height="83">
+          <button class="main-nav__btn" type="button">Открыть меню</button>
+        </nav>
+
+        <div class="intro">
+          <div class="intro__img">
+            <img class="intro__img-text" src="img/text-sedona-index.svg" alt="Добро пожаловать в Седону" width="280" height="280">
+          </div>
+          <h1 class="intro__title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h1>
+          <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
         </div>
-      </nav>
-
-      <div class="intro">
-        <div class="intro__img">
-          <img src="http://placehold.it/150x100" alt="Добро пожаловать в Седону" width="" height="">
-        </div>
-        <h1 class="intro__title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h1>
-        <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
-      </div>
-    </header>
+      </header>
 
 
-    <main>
       <section class="reasons">
         <h2 class="hidden">Причины, по которым стоит посетить Седону</h2>
 
         <div class="reason">
-          <h2 class="reason__title">НАСТОЯЩИЙ ГОРОДОК</h2>
-          <div class="reason__number">— №1 —</div>
-          <p class="reason__text">Седона не атракцион для туристов, там течёт своя жизнь</p>
-          <img class="reason__img" src="http://placehold.it/150x100" alt="Гостиница Седона" width="" height="">
+          <div class="reason__about">
+            <h2 class="reason__title">НАСТОЯЩИЙ ГОРОДОК</h2>
+            <div class="reason__number">— №1 —</div>
+            <p class="reason__text">Седона не атракцион для туристов, там течёт своя жизнь</p>
+          </div>
+          <div class="reason__foto">
+            <img class="reason__img" src="img/photo-city@1x.jpg" alt="Гостиница Седона" width="800" height="400">
+          </div>
         </div>
 
         <div class="features">
-          <div class="features__item">
+          <div class="features__item  features__item--house">
+            <img class="features__icon" src="img/icon-house.svg" alt="Жильё" width="313" height="304">
             <h2 class="features__title">Жильё</h2>
             <p class="features__text">Рекомендуем пожить в настоящем мотеле, всё как в кино</p>
           </div>
-          <div class="features__item">
+          <div class="features__item  features__item--gift">
+            <img class="features__icon" src="img/icon-gift.svg" alt="Сувениры" width="263" height="317">
             <h2 class="features__title">Сувениры</h2>
             <p class="features__text">Не только китайского, но и местного производства</p>
           </div>
-          <div class="features__item">
+          <div class="features__item  features__item--burger">
+            <img class="features__icon" src="img/icon-burger.svg" alt="Еда" width="321" height="288">
             <h2 class="features__title">Еда</h2>
             <p class="features__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
           </div>
         </div>
 
         <div class="reason">
-          <h2 class="reason__title">Там есть мост дъявола</h2>
-          <div class="reason__number">— №2 —</div>
-          <p class="reason__text">Да, по нему можно пройтись! Если, конечно, вы осмелитесь</p>
-          <img class="reason__img" src="http://placehold.it/150x100" alt="Гостиница Седона" width="" height="">
+          <div class="reason__about">
+            <h2 class="reason__title">Там есть мост дъявола</h2>
+            <div class="reason__number">— №2 —</div>
+            <p class="reason__text">Да, по нему можно пройтись! Если конечно вы осмелитесь</p>
+          </div>
+          <div class="reason__foto">
+            <img class="reason__img" src="img/photo-bridge@1x.jpg" alt="Гостиница Седона" width="800" height="400">
+          </div>
         </div>
 
-        <div class="reason reason--bg-gray">
-          <h2 class="reason__title">Небольшая площадь</h2>
-          <div class="reason__number">— №3 —</div>
-          <p class="reason__text">Все достопремичательности находятся очень близко</p>
-          <img class="reason__img" src="http://placehold.it/150x100" alt="Гостиница Седона" width="" height="">
-        </div>
+        <div class="reason__wrapper">
+          <div class="reason reason--inner-width">
+            <div class="reason__about reason__about--bg-gray">
+              <h2 class="reason__title">Небольшая площадь</h2>
+              <div class="reason__number">— №3 —</div>
+              <p class="reason__text">Все премичательности находятся очень близко</p>
+            </div>
+          </div>
 
-        <div class="reason reason--bg-gray">
-          <h2 class="reason__title">Красивая дорога</h2>
-          <div class="reason__number">— №4 —</div>
-          <p class="reason__text">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
-          <img class="reason__img" src="http://placehold.it/150x100" alt="Гостиница Седона" width="" height="">
-        </div>
+          <div class="reason reason--inner-width">
+            <div class="reason__about reason__about--bg-gray">
+              <h2 class="reason__title">Красивая дорога</h2>
+              <div class="reason__number">— №4 —</div>
+              <p class="reason__text">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+            </div>
+          </div>
 
-        <div class="reason reason--bg-gray">
-          <h2 class="reason__title">Мало туристов</h2>
-          <div class="reason__number">— №5 —</div>
-          <p class="reason__text">Большинство едет в Гранд Каньон и толпится там.</p>
-          <img class="reason__img" src="http://placehold.it/150x100" alt="Гостиница Седона" width="" height="">
+          <div class="reason reason--inner-width">
+            <div class="reason__about reason__about--bg-gray">
+              <h2 class="reason__title">Мало туристов</h2>
+              <div class="reason__number">— №5 —</div>
+              <p class="reason__text">Большинство едет в Гранд Каньон и толпится там.</p>
+            </div>
+          </div>
         </div>
       </section>
-    </main>
-
-    <div class="map">
-      <p class="map__title">Заинтересовались?</p>
-      <p class="map__text">Укажите предпологаемые даты поездки и мы покажем вам лучшие предложение гостиниц в Седоне</p>
-      <a class="map__link" href="#">Найти гостиницу</a>
-      <img class="map__image" src="http://placehold.it/150x10" alt="Местоположение гостиницы" width="" height="">
-    </div>
 
 
-    <footer class="page-footer">
-      <p class="instagram" href="#">#VISITSEDONA</p>
-      <div class="social">
-        <a class="social__link  socil__link--tw" href="#"></a>
-        <a class="social__link  socil__link--fb" href="#"></a>
-        <a class="social__link  socil__link--yt" href="#"></a>
+      <div class="map">
+        <div class="map__about">
+          <p class="map__title">Заинтересовались?</p>
+          <p class="map__text">Укажите предпологаемые даты поездки и мы покажем вам лучшие предложение гостиниц в Седоне</p>
+          <a class="map__btn" href="#">Найти гостиницу</a>
+        </div>
+        <picture class="map__photo">
+          <img class="map__image" src="img/bg-map-mobile@1x.jpg" alt="Местоположение гостиницы" width="320" height="350">
+        </picture>
       </div>
-      <p class="page-footer__copyright"></p>
-    </footer>
+
+
+      <footer class="page-footer">
+        <p class="page-footer__hashtag" href="#">#VISITSEDONA</p>
+        <div class="social">
+          <a class="social__link  socil__link--tw" href="#">Твиттер</a>
+          <a class="social__link  socil__link--fb" href="#">фейсбук</a>
+          <a class="social__link  socil__link--yt" href="#">ютуб</a>
+        </div>
+        <p class="page-footer__copyright">
+          <a class="page-footer__copyright-link" href="#">Разработано</a>
+        </p>
+      </footer>
+    </div>
   </body>
 </html>

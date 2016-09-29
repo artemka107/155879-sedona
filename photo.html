@@ -2,93 +2,111 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div class="global-wrapper">
+      <header class="page-header">
 
-    <header class="page-header">
-
-      <nav class="main-nav">
-        <img class="main-nav__logo" src="http://placehold.it/150x100" alt="Sedona" width="" height="">
-        <button class="main-nav__open">Открыть меню</button>
-        <div class="main-nav__menu">
-          <ul class="man-nav__list">
-            <li class="man-nav__item"><a href="#" class="main-nav__link">Главнаяя</a></li>
-            <li class="man-nav__item"><a href="#" class="main-nav__link">Фото и видео</a></li>
-            <li class="man-nav__item"><a href="#" class="main-nav__link">Форма отзыва</a></li>
-            <li class="man-nav__item"><a href="#" class="main-nav__link">HTML Academy</a></li>
+        <nav class="main-nav  main-nav--opened">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--first-shadow" href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--active">Фото и видео</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
+            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--last-shadow" href="#">HTML Academy</a></li>
           </ul>
+          <img class="main-nav__logo" src="img/logo-sedona-mobile.svg" alt="Sedona" width="102" height="83">
+          <button class="main-nav__btn" type="button">Открыть меню</button>
+        </nav>
+
+        <div class="intro">
+          <div class="intro__img">
+            <img class="intro__img-text" src="img/text-sedona-index.svg" alt="Добро пожаловать в Седону" width="280" height="280">
+          </div>
+          <h1 class="intro__title">Фото и видео</h1>
+          <p class="intro__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </div>
-      </nav>
-
-      <div class="intro">
-        <div class="intro__img">
-          <img src="http://placehold.it/150x100" alt="Добро пожаловать в Седону" width="" height="">
-        </div>
-        <h1 class="intro__title">Фото и видео</h1>
-        <p class="intro__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-      </div>
-    </header>
+      </header>
 
 
-    <main>
       <section class="posts">
         <h2 class="hidden">Посты с фотографиями</h2>
 
         <article class="post">
           <figure class="post__foto">
-            <img src="http://placehold.it/150x100" alt="Неродные просторы" width="" height="">
-            <figcaption class="post__caption">Неродные просторы</figcaption>
+            <img class="post__img" src="img/photo-1-mobile@1x.jpg" alt="Неродные просторы" width="280" height="280">
           </figure>
-          <cite class="post__foto-author">Автор фото: Борис</cite>
-          <div class="post__rating">
-            <a href="" class="post__like">Лайк</a>
-            <span class="post__count">1350</span>
-          </div>
+          <footer class="post__annotation">
+            <div class="post__title">
+              <div class="post__caption">Неродные просторы</div>
+              <cite class="post__foto-author">Автор фото: Борис</cite>
+            </div>
+            <div class="post__rating">
+              <a href="" class="post__like">Лайк</a>
+              <span class="post__count">1350</span>
+            </div>
+          </footer>
         </article>
 
         <article class="post">
           <figure class="post__foto">
-            <img src="http://placehold.it/150x100" alt="Местная растительность" width="" height="">
-            <figcaption class="post__caption">Местная растительность</figcaption>
+            <img class="post__img" src="img/photo-2-mobile@1x.jpg" alt="Местная растительность" width="280" height="280">
           </figure>
-          <cite class="post__foto-author">Автор фото: Сергей</cite>
-          <div class="post__rating">
-            <a href="" class="post__like">Лайк</a>
-            <span class="post__count">143</span>
-          </div>
+          <footer class="post__annotation">
+            <div class="post__title">
+              <div class="post__caption">Местная растительность</div>
+              <cite class="post__foto-author">Автор фото: Сергей</cite>
+            </div>
+            <div class="post__rating">
+              <a href="" class="post__like">Лайк</a>
+              <span class="post__count">143</span>
+            </div>
+          </footer>
         </article>
 
         <article class="post">
           <figure class="post__foto">
-            <img src="http://placehold.it/150x100" alt="Дорога на север" width="" height="">
-            <figcaption class="post__caption">Дорога на север</figcaption>
+            <img class="post__img" src="img/photo-3-mobile@1x.jpg" alt="Дорога на север" width="280" height="280">
           </figure>
-          <cite class="post__foto-author">Автор фото: Петр</cite>
-          <div class="post__rating">
-            <a href="" class="post__like">Лайк</a>
-            <span class="post__count">96</span>
-          </div>
+          <footer class="post__annotation">
+            <div class="post__title">
+              <div class="post__caption">Дорога на север</div>
+              <cite class="post__foto-author">Автор фото: Петр</cite>
+            </div>
+            <div class="post__rating">
+              <a href="" class="post__like">Лайк</a>
+              <span class="post__count">96</span>
+            </div>
+          </footer>
         </article>
 
         <article class="post">
           <figure class="post__foto">
-            <img src="http://placehold.it/150x100" alt="Мост дъявола" width="" height="">
-            <figcaption class="post__caption">Мост дъявола</figcaption>
+            <img class="post__img" src="img/photo-4-mobile@1x.jpg" alt="Мост дъявола" width="280" height="280">
           </figure>
-          <cite class="post__foto-author">Автор фото: Антон</cite>
-          <div class="post__rating">
-            <a href="" class="post__like">Лайк</a>
-            <span class="post__count">254</span>
-          </div>
+          <footer class="post__annotation">
+            <div class="post__title">
+              <div class="post__caption">Мост дъявола</div>
+              <cite class="post__foto-author">Автор фото: Антон</cite>
+            </div>
+            <div class="post__rating">
+              <a href="" class="post__like">Лайк</a>
+              <span class="post__count">254</span>
+            </div>
+          </footer>
         </article>
       </section>
 
+
       <div class="video">
-        <p class="video__title">Вы всё ещё сомневаетесь?</p>
-        <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <div class="video__about">
+          <p class="video__title">Вы всё ещё сомневаетесь?</p>
+          <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </div>
         <div class="player">
-          <img class="player__img" src="http://placehold.it/150x100" alt="кадр видео">
+          <img class="player__img" src="img/video-mobile@1x.jpg" alt="кадр видео" width="320" height="201">
           <div class="player__controls">
             <div class="player__control">
               <div class="player__scale"></div>
@@ -102,17 +120,18 @@
         </div>
       </div>
 
-    </main>
 
-
-    <footer class="page-footer">
-      <p class="instagram" href="#">#VISITSEDONA</p>
-      <div class="social">
-        <a class="social__link  socil__link--tw" href="#"></a>
-        <a class="social__link  socil__link--fb" href="#"></a>
-        <a class="social__link  socil__link--yt" href="#"></a>
-      </div>
-      <p class="page-footer__copyright"></p>
-    </footer>
+      <footer class="page-footer">
+        <p class="page-footer__hashtag" href="#">#VISITSEDONA</p>
+        <div class="social">
+          <a class="social__link  socil__link--tw" href="#">Твиттер</a>
+          <a class="social__link  socil__link--fb" href="#">фейсбук</a>
+          <a class="social__link  socil__link--yt" href="#">ютуб</a>
+        </div>
+        <p class="page-footer__copyright">
+          <a class="page-footer__copyright-link" href="#">Разработано</a>
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
