@@ -1,9 +1,10 @@
+// миксин для боковых отступов
 @mixin side-padding($size) {
   padding-left: $size;
   padding-right: $size;
 }
-// миксин для боковых отступов
 
+// миксин для распорки
 @mixin clearfix {
   &::after {
     content: "";
@@ -11,4 +12,17 @@
     clear: both;
   }
 }
-// миксин для распорки
+
+// миксин для активных стилей кнопок плеера
+@mixin player-btn-style {
+
+  fill: #5c6870;
+
+  &:hover {
+    fill: #333;
+  }
+
+  &:active {
+    fill: #c1c1c1;
+  }
+}

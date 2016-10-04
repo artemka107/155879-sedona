@@ -26,6 +26,36 @@
   line-height: 26px;
   color: #ffffff;
   font-weight: 700;
+
+  &:hover {
+    background: $bg-blue-hvr;
+  }
+
+  &:active {
+    background: $bg-blue-down;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background: #e5e5e5;
+    cursor: default;
+  }
+}
+
+.map__btn--disabled {
+  background: #e5e5e5;
+  cursor: default;
+
+  &:hover {
+    background: #e5e5e5;
+    cursor: default;
+  }
+
+  &:active {
+    background: #e5e5e5;
+    cursor: default;
+    color: #fff;
+  }
 }
 
 .map__photo {

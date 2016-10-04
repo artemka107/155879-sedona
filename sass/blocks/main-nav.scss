@@ -48,9 +48,9 @@
 
 .main-nav__logo {
   position: absolute;
-  bottom: -26px;
+  bottom: -33px;
   left: 50%;
-  transform: translateX(-50px);
+  transform: translateX(-50%);
 }
 
 @media (max-width: 767px) {
