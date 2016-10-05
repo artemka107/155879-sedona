@@ -8,7 +8,14 @@
   position: relative;
   padding-left: 50px;
   text-align: left;
+
+  &--gift svg,
+  &--burger svg,
+  &--house svg {
+    fill: #81b3d2;
+  }
 }
+
 
 .features__icon {
   position: absolute;
@@ -17,6 +24,8 @@
   width: 42px;
   height: 42px;
 }
+
+
 
 .features__title {
   margin: 0;
@@ -63,5 +72,25 @@
     width: 80px;
     height: 80px;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &--gift svg {
+      width: 90px;
+      height: 76px;
+      fill: #81b3d2;
+    }
+
+    &--burger svg {
+      width: 80px;
+      height: 70px;
+      fill: #81b3d2;
+    }
+
+    &--house {
+      width: 75px;
+      height: 75px;
+      fill: #81b3d2;
+    }
   }
 }

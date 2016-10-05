@@ -39,6 +39,10 @@
   font-weight: 400;
 }
 
+.reason__foto {
+  height: 260px;
+}
+
 .reason__img {
   width: 100%;
   height: 260px;
@@ -52,9 +56,11 @@
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+    height: 256px;
 
     &--inner-width {
       width: 33.33%;
+      height: auto;
     }
   }
 
@@ -86,10 +92,11 @@
 
   .reason__foto {
     width: 66.66%;
+    height: 256px;
   }
 
   .reason__img {
-
+    height: 256px;
   }
 }
 

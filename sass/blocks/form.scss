@@ -78,6 +78,15 @@
     opacity: 1;
     color: #000000;
   }
+
+  &:hover {
+    background: $bg-input-hvr;
+  }
+
+  &:active {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 4px #e5e5e5;
+  }
 }
 
 .form__contacts-wrapper {
@@ -130,6 +139,15 @@
     opacity: 1;
     color: #000000;
   }
+
+  &:hover {
+    background: $bg-input-hvr;
+  }
+
+  &:active {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 4px #e5e5e5;
+  }
 }
 
 .form__effect-wrapper {
@@ -170,6 +188,14 @@
   }
 }
 
+.form__effect-label:hover::after {
+  background: $bg-input-hvr;
+}
+
+.form__effect-label:active::after {
+  background: $bg-input-dwn;
+}
+
 .form__effect-field:checked + .form__effect-label::before {
   content: "";
   z-index: 1;
@@ -178,8 +204,12 @@
   left: 17px;
   width: 22px;
   height: 22px;
-  background: #000;
+  background: #333333;
   border-radius: 50%;
+}
+
+.form__effect-field:checked + .form__effect-label:active::before {
+  background: #a4a4a4;
 }
 
 .form__effect-field {
@@ -222,6 +252,14 @@
   }
 }
 
+.form__sight-label:hover::after {
+  background: $bg-input-hvr;
+}
+
+.form__sight-label:active::after {
+  background: $bg-input-dwn;
+}
+
 .form__sight-field:checked + .form__sight-label::before {
   content: "";
   z-index: 1;
@@ -231,9 +269,13 @@
   width: 18px;
   height: 14px;
   background-color: transparent;
-  border: 4px solid  #000;
+  border: 4px solid  #333333;
   transform: rotate(-45deg);
   clip: rect(8px, 20px, auto, auto);
+}
+
+.form__sight-field:checked + .form__sight-label:active::before {
+  border-color: #b9b9b9;
 }
 
 .form__emotions-field {
@@ -249,6 +291,15 @@
   resize: none;
   outline: 1px solid transparent;
   border: 0;
+
+  &:hover {
+    background: $bg-input-hvr;
+  }
+
+  &:focus {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 4px #e5e5e5;
+  }
 }
 
 .form__btn {
@@ -264,6 +315,16 @@
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background: $bg-blue-hvr;
+  }
+
+  &:active {
+    background: $bg-blue-down;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .form__footnote {

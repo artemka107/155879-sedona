@@ -9,6 +9,25 @@
   background: $bg-blue;
   line-height: 48px;
   font-size: 0;
+
+  &:hover {
+    background: $bg-blue-hvr;
+  }
+
+  &:active {
+    background: $bg-blue-down;
+  }
+
+  svg {
+    width: 50%;
+    height: 57%;
+    vertical-align: middle;
+    fill: #ffffff;
+  }
+}
+
+.social__link:active svg {
+  fill: #88b6d1;
 }
 
 @media (min-width: 768px) {
