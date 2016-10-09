@@ -8,15 +8,20 @@
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  height: 390px;
+  height: 387px;
   margin-bottom: 40px;
+  background-color: #ddebf3;
   background-image:
     url("../img/bg-intro-triangle-mobile.svg"),
     url("../img/bg-back-mobile@1x.jpg");
-  background-size: cover, cover;
+  background-size: 102%, cover;
   background-repeat: no-repeat;
-  background-position: center, center;
+  background-position: center bottom, center;
   text-align: center;
+
+  &--inner {
+    height: 200px;
+  }
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -34,7 +39,7 @@
 
 .intro__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   @include side-padding(30px);
   font-size: 18px;
   line-height: 26px;
@@ -44,7 +49,6 @@
 
 .intro__text {
   margin: 0;
-  margin-bottom: 24px;
   font-size: 14px;
   line-height: 26px;
   text-align: center;
@@ -54,17 +58,23 @@
 @media (min-width: 768px) {
   .intro__img {
     height: 520px;
+    margin-bottom: 47px;
     background-image:
       url("../img/bg-intro-triangle-tablet.svg"),
       url("../img/bg-back-tablet@1x.jpg");
-    background-size: 102%, cover;
+    background-size: 103%, cover;
     background-repeat: no-repeat;
     background-position: bottom, center;
     text-align: center;
+
+    &--inner {
+      height: 300px;
+    }
   }
 
   .intro__img-text {
     width: 461px;
+    margin-top: 77px;
   }
 
   .intro__title {
@@ -72,10 +82,11 @@
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 29px;
   }
 
   .intro__text {
-    width: 440px;
+    width: 500px;
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;

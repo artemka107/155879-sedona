@@ -8,7 +8,17 @@
   background: #81b3d2;
   color: #fff;
 
+  &--bg-triangle {
+    padding-top: 80px;
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 110%;
+  }
+
   &--bg-gray {
+    padding-top: 25px;
+    padding-bottom: 29px;
     background: #eee;
     color: #000;
     @include side-padding(20px);
@@ -16,12 +26,15 @@
 }
 
 .reason__title {
-
   margin: 0;
   margin-bottom: 10px;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+
+  &--inner-bg {
+    margin-bottom: 8px;
+  }
 }
 
 .reason__number {
@@ -30,6 +43,10 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+
+  &--inner-bg {
+    margin-bottom: 16px;
+  }
 }
 
 .reason__text {
@@ -37,6 +54,11 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+
+  &--inner-bg {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .reason__foto {
@@ -58,6 +80,10 @@
     display: flex;
     height: 256px;
 
+    &--inner-position .reason__about {
+      order: 2;
+    }
+
     &--inner-width {
       width: 33.33%;
       height: auto;
@@ -76,18 +102,35 @@
     box-sizing: border-box;
     width: 33.33%;
     @include side-padding(20px);
+    padding-top: 44px;
 
     &--bg-gray {
       width: 100%;
+      padding-bottom: 44px;
+    }
+
+    &--bg-triangle {
+      background-image: none;
+      padding-top: 44px;
     }
   }
 
   .reason__title {
     @include side-padding(30px);
+    font-size: 21px;
+
+    &--inner-bg {
+      margin-bottom: 10px;
+    }
   }
 
   .reason__text {
-    @include side-padding(20px);
+    @include side-padding(15px);
+
+  }
+
+  .reason__number {
+    margin-bottom: 22px;
   }
 
   .reason__foto {
@@ -104,6 +147,13 @@
 
   .reason__about {
     @include side-padding(70px);
+    padding-top: 51px;
+
+    &--bg-gray {
+      padding-top: 43px;
+      padding-bottom: 65px;
+    }
+
   }
 
   .reason__title {

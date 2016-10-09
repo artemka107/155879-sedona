@@ -19,7 +19,8 @@ module.exports = function(grunt) {
               "last 2 Chrome versions",
               "last 2 Firefox versions",
               "last 2 Opera versions",
-              "last 2 Edge versions"
+              "last 2 Edge versions",
+              "IE 11"
             ]}),
             require("css-mqpacker")({
               sort: true
@@ -131,6 +132,17 @@ module.exports = function(grunt) {
 
     clean: {
       build: ["build"]
+    },
+
+    uglify: {
+      my_target: {
+        files: [{
+          expand: true,
+          src: "build/js/*.js",
+          dest: "",
+          ext: "-min.js"
+        }]
+      }
     }
   });
 
@@ -143,7 +155,8 @@ module.exports = function(grunt) {
     "sass",
     "postcss",
     "csso",
+    "uglify",
     "symbols",
-    "imagemin"
+    "imagemin",
   ]);
 };

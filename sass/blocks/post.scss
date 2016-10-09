@@ -46,6 +46,10 @@
   font-size: 0;
   display: inline-block;
   vertical-align: top;
+
+  &:hover svg {
+    fill: #333333
+  }
 }
 
 .post__like svg {
@@ -144,5 +148,9 @@
   .post__like svg {
     fill: #ffffff;
     margin-right: 10px;
+  }
+
+  .post__like:hover svg {
+    fill: #fff;
   }
 }

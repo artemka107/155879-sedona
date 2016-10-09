@@ -51,6 +51,7 @@
 .form__presentation-field {
   flex-grow: 1;
   display: inline-block;
+  vertical-align: top;
   min-width: 50px;
   padding: 17px 20px;
   background: $bg-input;
@@ -83,13 +84,14 @@
     background: $bg-input-hvr;
   }
 
-  &:active {
+  &:focus {
     background-color: transparent;
     box-shadow: inset 0 0 0 4px #e5e5e5;
   }
 }
 
 .form__contacts-wrapper {
+  position: relative;
   margin-bottom: 45px;
   display: -webkit-flex;
   display: -moz-flex;
@@ -101,6 +103,46 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  &--tel::before {
+    content: "";
+    z-index: 5;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 58px;
+    height: 58px;
+    background: #e6e6e6;
+    background-image: url("../img/icons/icon-phone.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+  }
+
+  &--email::before {
+    content: "";
+    z-index: 5;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 58px;
+    height: 58px;
+    background: #e6e6e6;
+    background-image: url("../img/icons/icon-mail.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+  }
+}
+
+.form__contacts-error-msg {
+  position: absolute;
+  bottom: -25px;
+  left: 20px;
+  color: #ff5c5c;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: none;
 }
 
 .form__contacts-label {
@@ -112,6 +154,7 @@
 
 .form__contacts-field {
   display: inline-block;
+  vertical-align: top;
   padding: 17px 20px;
   background: $bg-input;
   box-sizing: border-box;
@@ -144,7 +187,7 @@
     background: $bg-input-hvr;
   }
 
-  &:active {
+  &:focus {
     background-color: transparent;
     box-shadow: inset 0 0 0 4px #e5e5e5;
   }
@@ -279,6 +322,7 @@
 }
 
 .form__emotions-field {
+  font-family: $ff-PT-Sans;
   box-sizing: border-box;
   width: 100%;
   min-height: 160px;
@@ -303,6 +347,7 @@
 }
 
 .form__btn {
+  font-family: $ff-PT-Sans;
   display: block;
   box-sizing: border-box;
   width: 100%;
@@ -562,20 +607,20 @@
     display: -o-flex;
     display: flex;
     justify-content: space-between;
+    flex-grow: 0;
   }
 
   .form__contacts-wrapper {
     flex-direction: row;
-    width: 50%;
     box-sizing: border-box;
-
-    &:nth-child(2n+1) {
-      padding-right: 80px;
-    }
 
     &:last-child {
       margin-bottom: 30px;
     }
+  }
+
+  .form__contacts-field {
+    width: 316px;
   }
 
   .form__contacts-label {
