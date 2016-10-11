@@ -1,9 +1,12 @@
 .social {
   display: inline-block;
+  vertical-align: top;
+  margin-bottom: 30px;
 }
 
 .social__link {
   display: inline-block;
+  vertical-align: top;
   width: 46px;
   height: 48px;
   background: $bg-blue;
@@ -19,8 +22,6 @@
   }
 
   svg {
-    width: 50%;
-    height: 57%;
     vertical-align: middle;
     fill: #ffffff;
   }
@@ -33,5 +34,6 @@
 @media (min-width: 768px) {
   .social {
     width: 40%;
+    margin-bottom: 0;
   }
 }

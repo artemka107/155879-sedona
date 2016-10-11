@@ -1,6 +1,6 @@
 .features {
   @include side-padding(20px);
-  padding-top: 40px;
+  padding-top: 38px;
   padding-bottom: 5px;
 }
 
@@ -23,20 +23,26 @@
   left: 0;
   width: 42px;
   height: 42px;
+
+  &--gift svg,
+  &--burger svg,
+  &--house svg  {
+    width: 46px;
+    height: 38px;
+  }
 }
 
 
 
 .features__title {
   margin: 0;
-  margin-bottom: 20px;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 21px;
   font-weight: 700;
 }
 
 .features__text {
-  margin-bottom: 35px;
+  margin-bottom: 33px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -51,7 +57,7 @@
     display: flex;
     padding: 0;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 28px;
   }
 
   .features__item {
@@ -76,8 +82,8 @@
     margin-right: auto;
 
     &--gift svg {
-      width: 90px;
-      height: 76px;
+      width: 80px;
+      height: 72px;
       fill: #81b3d2;
     }
 
@@ -87,10 +93,21 @@
       fill: #81b3d2;
     }
 
-    &--house {
+    &--house svg {
       width: 75px;
       height: 75px;
       fill: #81b3d2;
     }
+  }
+
+  .features__title {
+    font-size: 21px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features {
+    padding-bottom: 50px;
   }
 }

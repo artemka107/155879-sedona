@@ -1,12 +1,12 @@
 .post {
   position: relative;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 6px;
 
   &::before {
     content: "";
     position: absolute;
-    top: -20px;
+    top: 2px;
     left: -20px;
     right: -20px;
     height: 1px;
@@ -28,9 +28,11 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .post__annotation {
+  padding-top: 16px;
   margin: 0;
   font-size: 14px;
   line-height: 25px;
@@ -42,15 +44,23 @@
   font-style: normal;
 }
 
+.post__rating {
+  padding-top: 6px;
+}
+
 .post__like {
   font-size: 0;
   display: inline-block;
   vertical-align: top;
+
+  &:hover svg {
+    fill: #333333
+  }
 }
 
 .post__like svg {
   fill: #b2b2b2;
-  margin-right: 15px;
+  margin-right: 11px;
 }
 
 .post__count {
@@ -109,11 +119,18 @@
   }
 
   .post__like svg {
-    margin-right: 10px;
+    margin-right: 6px;
   }
 
   .post__rating {
     align-self: center;
+    padding-top: 9px;
+  }
+
+  .post__count {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 33px;
   }
 }
 
@@ -143,6 +160,10 @@
 
   .post__like svg {
     fill: #ffffff;
-    margin-right: 10px;
+    margin-right: 6px;
+  }
+
+  .post__like:hover svg {
+    fill: #fff;
   }
 }

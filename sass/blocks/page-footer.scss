@@ -1,13 +1,20 @@
 .page-footer {
   @include side-padding(20px);
+  padding-top: 35px;
   text-align: center;
   padding-bottom: 20px;
 }
 
 .page-footer__hashtag {
+  margin: 0;
+  margin-bottom: 37px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+}
+
+.page-footer__copyright {
+  margin: 0;
 }
 
 .page-footer__copyright-link {
@@ -15,11 +22,11 @@
   line-height: 26px;
   color: #000;
   text-decoration: none;
-  padding-right: 20px;
+  padding-right: 7px;
 }
 
 .page-footer__copyright-link svg {
-  transform: translate(10px, 15px);
+  transform: translate(8px, 10px);
 }
 
 .page-footer__copyright-link:hover svg {
@@ -47,10 +54,34 @@
   .page-footer__hashtag {
     width: 30%;
     margin: 0;
+    text-align: left;
   }
 
   .page-footer__copyright {
     width: 30%;
     margin: 0;
+    text-align: right;
+  }
+
+  .page-footer__copyright-link {
+    vertical-align: top;
+
+    svg {
+      transform: translate(8px, 0);
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-footer__hashtag {
+    box-sizing: border-box;
+    padding-right: 42px;
+    text-align: center;
+  }
+
+  .page-footer__copyright {
+    position: relative;
+    left: 15px;
+    top: 5px;
   }
 }
