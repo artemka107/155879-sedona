@@ -332,7 +332,7 @@
   content: "";
   z-index: 1;
   position: absolute;
-  top: 15px;
+  top: 11px;
   left: 15px;
   width: 18px;
   height: 14px;
@@ -485,6 +485,7 @@
     &--presentation {
       text-align: left;
       margin-bottom: 57px;
+      white-space: nowrap;
     }
 
     &--sight {
@@ -543,11 +544,11 @@
     }
 
     &::before {
-      margin-right: 175px;
+      margin-right: 10px;
     }
 
     &::after {
-      margin-left: 175px;
+      margin-left: 10px;
     }
   }
 
@@ -657,8 +658,12 @@
     margin-bottom: 72px;
   }
 
-  .form__title-visibility-none {
-    display: inline-block;
+  .form__title--sight::before {
+    margin-right: 155px;
+  }
+
+  .form__title--sight::after {
+    margin-left: 155px;
   }
 
   .form__contacts-wrappers {
@@ -683,7 +688,7 @@
 
   .form__contacts-error-msg {
     bottom: 65px;
-    left: 106px;
+    left: 176px;
   }
 
   .form__contacts-field {
@@ -694,7 +699,7 @@
   .form__contacts-label {
     align-self: center;
     padding-left: 0;
-    margin-right: 20px;
+    margin-right: 10px;
   }
 
   .form__contacts-label-hidden {
